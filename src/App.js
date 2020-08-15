@@ -54,8 +54,8 @@ class App extends Component {
       .reduce((acc, item) => !item.add ? item.amount + acc : acc, 0)
 
   getTotalBalance() {
-    const resultIncome = this.getIncome;
-    const resultExpenses = this.getExpenses;
+    const resultIncome = this.getIncome();
+    const resultExpenses = this.getExpenses();
 
     const totalBalance = resultIncome - resultExpenses;
 
